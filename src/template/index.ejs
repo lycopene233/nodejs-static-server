@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<title>Node Server</title>
+</head>
+<body>
+	<ul>
+		<% files.forEach(function(name){ %>
+			<li><a href="../<%= dir %>/<%= name %>"> <%= name %></a></li>
+		<% }) %>
+	</ul>
+</body>
+</html>
