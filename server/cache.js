@@ -37,7 +37,7 @@ module.exports = function isCache (stas, request, response) {
 		return false;
 	}
 	if (etag && etag !== response.getHeader('Etag')) {
-		return false;
+		// return false;
 	}
 
 	return true;
